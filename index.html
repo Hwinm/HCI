@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI technologies | Portfolio | Houwin</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!--navigatie-->
+    <nav class="navigation">
+        <!--logo-->
+        <a href="index.html" class="logo">HWM</a>
+    </nav>
+
+    
+    <!--page container-->
+    <div class="page-container">
+        <div class="top-bar">
+            <span>HCI Technologies<br>Portfolio</span>
+            <div class="article-number">2022<br>Houwin</div>
+        </div>
+    
+
+        <section id="blog">
+
+            <div class="blog-heading">
+                <h1>CMD-HT | HCI Technologies - Ontdek mijn werken </h1>
+            </div>
+
+            <ul class="blog-filter">
+                <li class="list blog-filter-active" data-filter="all">All</li>/
+                <li class="list" data-filter="ws">Workshop (WS)</li>/
+                <li class="list" data-filter="lec">Lecture (LEC)</li>/
+                <li class="list" data-filter="exc">Excursion</li>/
+                <li class="list" data-filter="lab">Labweken</li>
+            </ul>
+       
+
+            <div class="blog-container">
+                <a href="computer-vision.html" class="blog-box ws">
+                    <div class="blog-img">
+                        <img src="images/processing.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text ws">
+                        <span class="category"> Workshop (WS)</span>
+                        <strong>Computer Vison</strong>
+                        <span class="blog-post-time">Week 13</span>
+                    </div>
+                </a>
+
+                <a href="virtual-environment.html" class="blog-box ws">
+                    <div class="blog-img">
+                        <img src="images/vr.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Workshop (WS)</span>
+                        <strong>Virtual Environments</strong>
+                        <span class="blog-post-time">Week 14</span>
+                    </div>
+                </a>
+
+                <a href="arduino.html" class="blog-box ws">
+                    <div class="blog-img">
+                        <img src="images/arduino.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Workshop (WS)</span>
+                        <strong>Arduino</strong>
+                        <span class="blog-post-time">Week 15/16</span>
+                    </div>
+                </a>
+
+                <a href="playful-interaction.html" class="blog-box lec">
+                    <div class="blog-img">
+                        <img src="images/minator-yang-oJjfBo_0R_8-unsplash.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Lecture (LEC)</span>
+                        <strong>Playful interaction</strong>
+                        <span class="blog-post-time">Week</span>
+                    </div>
+                </a>
+
+                <a href="artificial-creature.html" class="blog-box lec">
+                    <div class="blog-img">
+                        <img src="images/lecture/reachy_mobile_square_yellow.jpeg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Lecture (LEC)</span>
+                        <strong>Artificial creature</strong>
+                        <span class="blog-post-time">Week</span>
+                    </div>
+                </a>
+                <a href="wearables.html" class="blog-box lec">
+                    <div class="blog-img">
+                        <img src="images/lecture/RealWear-HMT-1.jpeg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Lecture (LEC)</span>
+                        <strong>Wearables</strong>
+                        <span class="blog-post-time">Week</span>
+                    </div>
+                </a>
+                <a href="xr.html" class="blog-box lec">
+                    <div class="blog-img">
+                        <img src="images/lecture/Picture cook.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Lecture (LEC)</span>
+                        <strong>XR</strong>
+                        <span class="blog-post-time">Week</span>
+                    </div>
+                </a>
+
+                <a href="excursion.html" class="blog-box exc">
+                    <div class="blog-img">
+                        <img src="images/maritiemgebouw2019.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Excursion</span>
+                        <strong>Excursie Maritiem Museum Rotterdam</strong>
+                        <span class="blog-post-time">Week 15/16</span>
+                    </div>
+                </a>
+
+                <a href="labweken.html" class="blog-box lab">
+                    <div class="blog-img">
+                        <img src="images/maakhaven.jpg" alt="1">
+                    </div>   
+                    <div class="blog-text">
+                        <span class="category"> Labweken</span>
+                        <strong>Maakhaven - labweken</strong>
+                        <span class="blog-post-time">Week 17/18</span>
+                    </div>
+                </a>
+            </div> 
+
+        </section>
+        
+    <footer>
+        <div class="bottom-bar"></div>
+        <h2>HWM</h2>
+    </footer>
+    </div>
+ 
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).on('click','.blog-filter li', function(){
+            $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+        });
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.blog-box').show('1000');
+                }
+                else{
+                    $('.blog-box').not('.' + value).hide('1000');
+                    $('.blog-box').filter('.' + value).show('1000');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
